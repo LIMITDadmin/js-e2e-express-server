@@ -15,7 +15,7 @@ const create = async () => {
 
     // root route - serve static file
     app.get('/', (req, res) => {
-        return res.sendFile(path.join(__dirname, '../public/client.html'));
+        return res.sendFile(path.join(__dirname, '../client/public/index.html'));
     });
     app.get('/express_backend', (req, res) => { //Line 9
         res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' }); //Line 10
