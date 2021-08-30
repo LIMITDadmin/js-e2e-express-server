@@ -7,6 +7,7 @@ const create = async () => {
 
     // server
     const app = express();
+    app.set('view engine', 'jade');
    
     app.use(utils.ignoreFavicon);
     
